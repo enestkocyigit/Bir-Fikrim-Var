@@ -1,0 +1,38 @@
+﻿@model BirFikrimVar.Entity.DTOs.UserRegisterDto
+@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+<div class="container mt-5">
+    <div class="mx-auto form-wrapper" style="max-width:420px;">
+        <h2 class="text-center mb-4">Kayıt Ol</h2>
+
+        <form asp-action="Register" asp-controller="Account" method="post" novalidate>
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+            <input asp-for="FullName" class="form-control mb-3" placeholder="Ad Soyad" />
+            <span asp-validation-for="FullName" class="text-danger small"></span>
+
+            <input asp-for="Email" class="form-control mb-3" placeholder="E-posta" />
+            <span asp-validation-for="Email" class="text-danger small"></span>
+
+            <input asp-for="Password" type="password" class="form-control mb-3" placeholder="Şifre" />
+            <span asp-validation-for="Password" class="text-danger small"></span>
+
+            <button type="submit" class="btn btn-success w-100">Kayıt Ol</button>
+        </form>
+
+        <p class="mt-3 text-center">
+            Zaten hesabınız var mı?
+            <a asp-action="Login" asp-controller="Account">Giriş Yap</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

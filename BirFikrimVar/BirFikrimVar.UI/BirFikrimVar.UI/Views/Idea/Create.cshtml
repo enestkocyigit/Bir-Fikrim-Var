@@ -1,0 +1,31 @@
+﻿@model BirFikrimVar.Entity.DTOs.IdeaCreateDto
+@{
+    ViewData["Title"] = "Fikir Paylaş";
+}
+
+<div class="container mt-5">
+    <div class="mx-auto form-wrapper" style="max-width: 500px;">
+        <h2 class="text-center mb-4">Fikrini Paylaş</h2>
+
+        <form asp-action="Create" asp-controller="Idea" method="post" novalidate enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+            <input asp-for="Title" class="form-control mb-3" placeholder="Fikir Başlığı" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+
+            <textarea asp-for="Content" class="form-control mb-3" rows="6" placeholder="Fikrini detaylıca anlat..."></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+
+            <button type="submit" class="btn btn-dark w-100">Paylaş</button>
+            
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

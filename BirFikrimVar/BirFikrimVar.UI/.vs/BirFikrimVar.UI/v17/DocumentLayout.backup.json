@@ -1,0 +1,326 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\views\\shared\\_ideacard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\views\\shared\\_ideacard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\views\\idea\\myideas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\views\\idea\\myideas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\controllers\\ideacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\controllers\\ideacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\views\\idea\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\views\\idea\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C081624-53F7-4A21-81CA-718AA969C399}|BirFikrimVar.Entity\\BirFikrimVar.Entity.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.entity\\viewmodels\\ideacardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C081624-53F7-4A21-81CA-718AA969C399}|BirFikrimVar.Entity\\BirFikrimVar.Entity.csproj|solutionrelative:birfikrimvar.entity\\viewmodels\\ideacardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.business\\managers\\ideamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|solutionrelative:birfikrimvar.business\\managers\\ideamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.business\\services\\ilikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|solutionrelative:birfikrimvar.business\\services\\ilikeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C56743-27E2-42FE-B03D-18D96908571F}|BirFikrimVar.DataAccess\\BirFikrimVar.DataAccess.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C56743-27E2-42FE-B03D-18D96908571F}|BirFikrimVar.DataAccess\\BirFikrimVar.DataAccess.csproj|solutionrelative:birfikrimvar.dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C081624-53F7-4A21-81CA-718AA969C399}|BirFikrimVar.Entity\\BirFikrimVar.Entity.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.entity\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C081624-53F7-4A21-81CA-718AA969C399}|BirFikrimVar.Entity\\BirFikrimVar.Entity.csproj|solutionrelative:birfikrimvar.entity\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.ui\\views\\comment\\my.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C76ABD80-F726-4844-80D8-1E8044DE8746}|BirFikrimVar.UI\\BirFikrimVar.UI.csproj|solutionrelative:birfikrimvar.ui\\views\\comment\\my.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C081624-53F7-4A21-81CA-718AA969C399}|BirFikrimVar.Entity\\BirFikrimVar.Entity.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.entity\\viewmodels\\mycommentsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C081624-53F7-4A21-81CA-718AA969C399}|BirFikrimVar.Entity\\BirFikrimVar.Entity.csproj|solutionrelative:birfikrimvar.entity\\viewmodels\\mycommentsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.business\\services\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|solutionrelative:birfikrimvar.business\\services\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.business\\validation\\commentcreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|solutionrelative:birfikrimvar.business\\validation\\commentcreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|c:\\users\\dell\\desktop\\birfikrimvar\\birfikrimvar.ui\\birfikrimvar.business\\managers\\commentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4EBE0EB-DFC6-4FAE-84BC-227514A41221}|BirFikrimVar.Business\\BirFikrimVar.Business.csproj|solutionrelative:birfikrimvar.business\\managers\\commentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_IdeaCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Shared\\_IdeaCard.cshtml",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Views\\Shared\\_IdeaCard.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Shared\\_IdeaCard.cshtml",
+              "RelativeToolTip": "BirFikrimVar.UI\\Views\\Shared\\_IdeaCard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-21T11:39:35.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyIdeas.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Idea\\MyIdeas.cshtml",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Views\\Idea\\MyIdeas.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Idea\\MyIdeas.cshtml",
+              "RelativeToolTip": "BirFikrimVar.UI\\Views\\Idea\\MyIdeas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-21T11:39:18.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BirFikrimVar.UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-21T11:39:05.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BirFikrimVar.UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:26:40.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Idea\\Details.cshtml",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Views\\Idea\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Idea\\Details.cshtml",
+              "RelativeToolTip": "BirFikrimVar.UI\\Views\\Idea\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-21T11:24:16.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IdeaCardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Entity\\ViewModels\\IdeaCardViewModel.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Entity\\ViewModels\\IdeaCardViewModel.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Entity\\ViewModels\\IdeaCardViewModel.cs",
+              "RelativeToolTip": "BirFikrimVar.Entity\\ViewModels\\IdeaCardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:14:55.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IdeaController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\IdeaController.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Controllers\\IdeaController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\IdeaController.cs",
+              "RelativeToolTip": "BirFikrimVar.UI\\Controllers\\IdeaController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAQwHwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:13:36.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BirFikrimVar.UI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:11:52.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Program.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Program.cs",
+              "RelativeToolTip": "BirFikrimVar.UI\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:11:23.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IdeaManager.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Managers\\IdeaManager.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Business\\Managers\\IdeaManager.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Managers\\IdeaManager.cs",
+              "RelativeToolTip": "BirFikrimVar.Business\\Managers\\IdeaManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:09:33.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ILikeService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Services\\ILikeService.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Business\\Services\\ILikeService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Services\\ILikeService.cs",
+              "RelativeToolTip": "BirFikrimVar.Business\\Services\\ILikeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:09:15.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.DataAccess\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.DataAccess\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.DataAccess\\AppDbContext.cs",
+              "RelativeToolTip": "BirFikrimVar.DataAccess\\AppDbContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:07:10.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Like.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Entity\\Models\\Like.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Entity\\Models\\Like.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Entity\\Models\\Like.cs",
+              "RelativeToolTip": "BirFikrimVar.Entity\\Models\\Like.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:06:43.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "My.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Comment\\My.cshtml",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Views\\Comment\\My.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Views\\Comment\\My.cshtml",
+              "RelativeToolTip": "BirFikrimVar.UI\\Views\\Comment\\My.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-21T11:03:14.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.UI\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.UI\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "BirFikrimVar.UI\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwHwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:01:48.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MyCommentsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Entity\\ViewModels\\MyCommentsViewModel.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Entity\\ViewModels\\MyCommentsViewModel.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Entity\\ViewModels\\MyCommentsViewModel.cs",
+              "RelativeToolTip": "BirFikrimVar.Entity\\ViewModels\\MyCommentsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T11:01:27.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICommentService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Services\\ICommentService.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Business\\Services\\ICommentService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Services\\ICommentService.cs",
+              "RelativeToolTip": "BirFikrimVar.Business\\Services\\ICommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T10:57:25.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CommentCreateDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Validation\\CommentCreateDtoValidator.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Business\\Validation\\CommentCreateDtoValidator.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Validation\\CommentCreateDtoValidator.cs",
+              "RelativeToolTip": "BirFikrimVar.Business\\Validation\\CommentCreateDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T10:57:03.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CommentManager.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Managers\\CommentManager.cs",
+              "RelativeDocumentMoniker": "BirFikrimVar.Business\\Managers\\CommentManager.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\BirFikrimVar\\BirFikrimVar.UI\\BirFikrimVar.Business\\Managers\\CommentManager.cs",
+              "RelativeToolTip": "BirFikrimVar.Business\\Managers\\CommentManager.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T10:54:38.331Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

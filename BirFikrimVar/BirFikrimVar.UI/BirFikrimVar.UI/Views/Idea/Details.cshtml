@@ -1,0 +1,165 @@
+﻿@model BirFikrimVar.Entity.ViewModels.CommentViewModel
+@using Microsoft.AspNetCore.Authorization;
+@using System.Security.Claims
+@{
+    var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+}
+
+@{
+    ViewData["Title"] = "Fikir Detayı";
+}
+
+<h2 class="mb-1">@Model.IdeaTitle
+    <small class="text-muted" style="font-size: .8em;">👍 @Model.LikeCount</small>
+</h2>
+
+
+<p class="text-muted mb-2">
+    @Model.IdeaAuthorName
+    (<span>@Model.IdeaCreatedAt.ToString("dd.MM.yyyy HH:mm")</span>)
+</p>
+
+<p class="fs-5 text-dark" style="white-space: pre-line;">@Model.IdeaContent</p>
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <form asp-controller="Like" asp-action="Toggle" method="post" class="mb-3">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="ideaId" value="@Model.IdeaId" />
+        <button type="submit" class="btn @(Model.HasLiked ? "btn-secondary" : "btn-outline-warning")">
+            👍 @(Model.HasLiked ? "Beğeniyi Geri Al" : "Beğen") (@Model.LikeCount)
+        </button>
+    </form>
+
+    @if (Model.IsOwner)
+    {
+        if (Model.CanEdit)
+        {
+            <a asp-controller="Idea"
+               asp-action="Edit"
+               asp-route-id="@Model.IdeaId"
+               class="btn btn-sm btn-outline-secondary mb-3">
+                Düzenle
+            </a>
+        }
+        else
+        {
+            <p class="text-muted mb-3">
+                Düzenleme süresi doldu (30 dakika geçti).
+            </p>
+        }
+    }
+
+}
+else
+{
+    <p class="text-muted mb-3">Beğeniler: @Model.LikeCount</p>
+}
+
+<hr />
+
+<h4>Yorumlar</h4>
+
+@if (Model.Comments != null && Model.Comments.Any())
+{
+    @foreach (var comment in Model.Comments)
+    {
+        <div class="card mb-3">
+            <div class="card-body">
+                <p class="card-text">@comment.Content</p>
+                <p class="card-text">
+                    <small class="text-muted">
+                        @(comment.User?.FullName ?? "Bilinmiyor")
+                        (@comment.CreatedAt.ToString("dd.MM.yyyy HH:mm"))
+                    </small>
+                </p>
+
+                @* Yorum beğeni *@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    var cLiked = Model.UserLikedCommentIds.Contains(comment.Id);
+                    var cCount = Model.CommentLikeCounts.ContainsKey(comment.Id)
+                    ? Model.CommentLikeCounts[comment.Id]
+                    : 0;
+
+                    <form asp-controller="Comment" asp-action="ToggleLike" method="post" class="d-inline" float-end>
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="commentId" value="@comment.Id" />
+                        <input type="hidden" name="ideaId" value="@Model.IdeaId" />
+                        <button type="submit" class="btn btn-sm @(cLiked ? "btn-secondary" : "btn-outline-warning")">
+                            👍 @(cLiked ? "Beğeniyi Geri Al" : "Beğen") (@cCount)
+                        </button>
+                    </form>
+                }
+                else
+                {
+                    var cCount = Model.CommentLikeCounts.ContainsKey(comment.Id)
+                    ? Model.CommentLikeCounts[comment.Id]
+                    : 0;
+                    <span class="text-muted">💬 👍 @cCount</span>
+                }
+
+                @if (User.Identity.IsAuthenticated && comment.UserId.ToString() == currentUserId)
+                {
+                    <div class="mt-2 d-flex gap-2 justify-content-end">
+                        <a class="btn btn-sm btn-outline-secondary"
+                           asp-controller="Comment"
+                           asp-action="Edit"
+                           asp-route-id="@comment.Id">
+                            Düzenle
+                        </a>
+
+                        <form asp-controller="Comment" asp-action="Delete" method="post"
+                              onsubmit="return confirm('Yorumu silmek istiyor musunuz?');">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@comment.Id" />
+                            <input type="hidden" name="ideaId" value="@Model.IdeaId" />
+                            <button type="submit" class="btn btn-sm btn-outline-danger">
+                                Sil
+                            </button>
+                        </form>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p>Henüz yorum yapılmamış.</p>
+}
+
+<hr />
+
+@if (User.Identity.IsAuthenticated)
+{
+
+    <h4>Yorum Ekle</h4>
+    <form asp-controller="Comment" asp-action="Create" method="post">
+
+        @Html.AntiForgeryToken()
+        <input asp-for="NewComment.IdeaId" type="hidden" />
+
+        <div class="mb-3">
+            <label asp-for="NewComment.Content"></label>
+            <textarea asp-for="NewComment.Content" class="form-control" rows="4" required></textarea>
+            <span asp-validation-for="NewComment.Content" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Yorum Gönder</button>
+        
+    </form>
+}
+else
+{
+    <div class="alert alert-warning mt-3">
+        Yorum yapabilmek için <a asp-controller="Account" asp-action="Login">giriş yapmalısınız</a>.
+    </div>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

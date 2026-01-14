@@ -1,0 +1,11 @@
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\bin\Debug\net8.0\BirFikrimVar.Entity.deps.json
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\bin\Debug\net8.0\BirFikrimVar.Entity.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\bin\Debug\net8.0\BirFikrimVar.Entity.pdb
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\BirFikrimVar.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\BirFikrimVar.Entity.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\BirFikrimVar.Entity.AssemblyInfo.cs
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\BirFikrimVar.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\BirFikrimVar.Entity.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\refint\BirFikrimVar.Entity.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\BirFikrimVar.Entity.pdb
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Entity\obj\Debug\net8.0\ref\BirFikrimVar.Entity.dll

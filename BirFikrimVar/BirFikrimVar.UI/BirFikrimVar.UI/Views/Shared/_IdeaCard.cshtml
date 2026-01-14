@@ -1,0 +1,100 @@
+﻿@model BirFikrimVar.Entity.ViewModels.IdeaCardViewModel
+
+<div class="card mb-3">
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-start">
+            <!-- SOL: Başlık / tarih / özet / -->
+            <div class="pe-3">
+                <h5 class="card-title mb-1">@Model.Idea.Title</h5>
+                @*<div class="text-muted small mb-2">
+                    - Yazan: @(Model.Idea.User != null
+                                        ? Model.Idea.User.FullName
+                                        : "Bilinmiyor")
+                    • @Model.Idea.CreatedAt.ToString("dd.MM.yyyy HH:mm")
+                    
+                    
+                </div>
+            *@
+                <p class="card-text mb-2">
+                    @(string.IsNullOrWhiteSpace(Model.Idea.Content)
+                                        ? ""
+                                        : (Model.Idea.Content.Length > 200
+                                        ? Model.Idea.Content.Substring(0, 200) + "..."
+                                        : Model.Idea.Content))
+                </p>
+
+               
+            </div>
+
+            <!-- SAĞ: Yorumlara Bak + Sil + Düzenle -->
+            <div class="text-end" style="min-width: 170px;">
+
+                @{
+                    var likedMap = ViewBag.LikedMap as Dictionary<int, bool>;
+                    var likeCounts = ViewBag.LikeCounts as Dictionary<int, int>;
+
+                    bool hasLiked = false;
+                    int likeCount = 0;
+
+                    if (likedMap != null && likedMap.TryGetValue(Model.Idea.Id, out var liked))
+                        hasLiked = liked;
+
+                    if (likeCounts != null && likeCounts.TryGetValue(Model.Idea.Id, out var cnt))
+                        likeCount = cnt;
+                    else
+                        likeCount = Model.Idea?.Likes?.Count ?? 0; // yedek
+                }
+
+                
+                <!-- Beğeni Butonu -->
+                <form asp-controller="Like"
+                      asp-action="Toggle"
+                      method="post"
+                      class="mb-2">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="ideaId" value="@Model.Idea.Id" />
+                    <button type="submit"
+                            class="btn btn-sm @(hasLiked ? "btn-warning" : "btn-outline-warning") w-100">
+                        👍 @(hasLiked ? "Beğeniyi Geri Al" : "Beğen") (@likeCount)
+                    </button>
+                </form>
+
+
+
+                <a asp-controller="Idea"
+                   asp-action="Details"
+                   asp-route-id="@Model.Idea.Id"
+                   class="btn btn-sm btn-outline-primary w-100 mb-2">
+                    💬 Yorumlara Bak
+                </a>
+
+
+                @if (Model.ShowDelete)
+                {
+                    <form asp-controller="Idea"
+                          asp-action="Delete"
+                          method="post"
+                          onsubmit="return confirm('Bu fikri silmek istediğinize emin misiniz?');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@Model.Idea.Id" />
+                        <button type="submit" class="btn btn-sm btn-outline-danger w-100">
+                            Sil
+                        </button>
+                    </form>
+                }
+
+                @if (Model.ShowEdit && Model.CanEdit)
+                {
+                    <a asp-controller="Idea"
+                       asp-action="Edit"
+                       asp-route-id="@Model.Idea.Id"
+                       class="btn btn-sm btn-outline-secondary w-100 mt-2">
+                        Düzenle
+                    </a>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>

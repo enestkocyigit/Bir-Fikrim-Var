@@ -1,0 +1,194 @@
+﻿@model List<BirFikrimVar.Entity.Models.Idea>
+
+@{
+    // Controller’dan gelen yardımcı veriler
+    var likedMap = ViewBag.LikedMap as Dictionary<int, bool>;
+    var likeCounts = ViewBag.LikeCounts as Dictionary<int, int>;
+
+    string q = ViewBag.Query as string ?? "";
+    string sort = ViewBag.Sort as string ?? "new";
+    int page = (int)(ViewBag.Page ?? 1);
+    int totalPages = (int)(ViewBag.TotalPages ?? 1);
+}
+
+<h2 class="mb-3">Paylaşılan Fikirler</h2>
+
+<!-- Arama + Sıralama -->
+<form method="get" asp-controller="Idea" asp-action="Index" class="row g-2 mb-3">
+    <div class="col-md-6">
+        <input type="text"
+                itemid="q-input"
+               name="q"
+               value="@q"
+               class="form-control"
+               placeholder="Başlık, içerik veya yazar ara..." />
+
+        <input type="hidden" name="sort" value="@sort" />
+    </div>
+    <div class="col-md-3">
+        <select class="form-select" onchange="applySort(this.value)">
+            @* RZ1031 hatası yaşamamak için selected’i if ile basıyoruz *@
+            @if (sort == "new")
+            {
+                <option value="new" selected>En yeni</option>
+            }
+            else
+            {
+                <option value="new">En yeni</option>
+            }
+
+            @if (sort == "old")
+            {
+                <option value="old" selected>En eski</option>
+            }
+            else
+            {
+                <option value="old">En eski</option>
+            }
+
+            @if (sort == "liked")
+            {
+                <option value="liked" selected>En beğenilen</option>
+            }
+            else
+            {
+                <option value="liked">En beğenilen</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-3">
+        <button type="submit" class="btn btn-primary w-100">🔎 Ara</button>
+    </div>
+</form>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Kriterlerinize uyan fikir bulunamadı.</div>
+}
+else
+{
+    @foreach (var idea in Model)
+    {
+        var hasLiked = likedMap != null && likedMap.TryGetValue(idea.Id, out var liked) && liked;
+        var likeCnt = likeCounts != null && likeCounts.TryGetValue(idea.Id, out var cnt) ? cnt : 0;
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <!-- SOL: Başlık, yazar, tarih, özet -->
+                    <div class="pe-3">
+                        <h5 class="card-title mb-1">@idea.Title</h5>
+                        <div class="text-muted small mb-2">
+                            Yazan: @idea.User?.FullName • @idea.CreatedAt.ToString("dd.MM.yyyy HH:mm")
+                        </div>
+
+                        <p class="card-text mb-2">
+                            @(
+                                                string.IsNullOrWhiteSpace(idea.Content)
+                                                ? ""
+                                                : (idea.Content.Length > 200 ? idea.Content[..200] + "..." : idea.Content)
+                                                )
+                    </p>
+
+                    </div>
+
+                    <!-- SAĞ: Yorumlara Bak -->
+                    <div class="text-end" style="min-width: 170px;">
+                        @if (User.Identity.IsAuthenticated)
+                                {
+                            <form asp-controller="Like" asp-action="Toggle" method="post" class="mb-2">
+                                
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="ideaId" value="@idea.Id" />
+                                        <button type="submit"
+                                                class="btn btn-sm @(hasLiked ? "btn-warning" : "btn-outline-warning") w-100">
+                                        
+                                    👍 @(hasLiked ? "Beğeniyi Geri Al" : "Beğen") (@likeCnt)
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <div class="text-muted small">👍 @likeCnt</div>
+                                }
+
+                        <a asp-controller="Idea"
+                           asp-action="Details"
+                           asp-route-id="@idea.Id"
+                           class="btn btn-sm btn-outline-primary w-100 mb-2">
+                            💬 Yorumlara Bak
+                        </a>
+
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Sayfalama -->
+    @if (totalPages > 1)
+    {
+        <nav aria-label="Sayfalama">
+            <ul class="pagination justify-content-center">
+
+                <li class="page-item @(page <= 1 ? "disabled" : "")">
+                    <a class="page-link"
+                       asp-controller="Idea"
+                       asp-action="Index"
+                       asp-route-q="@q"
+                       asp-route-sort="@sort"
+                       asp-route-page="@(page - 1)">
+                        ‹ Önceki
+                    </a>
+                </li>
+
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == page ? "active" : "")">
+                        <a class="page-link"
+                           asp-controller="Idea"
+                           asp-action="Index"
+                           asp-route-q="@q"
+                           asp-route-sort="@sort"
+                           asp-route-page="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+
+                <li class="page-item @(page >= totalPages ? "disabled" : "")">
+                    <a class="page-link"
+                       asp-controller="Idea"
+                       asp-action="Index"
+                       asp-route-q="@q"
+                       asp-route-sort="@sort"
+                       asp-route-page="@(page + 1)">
+                        Sonraki ›
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    }
+}
+@section Scripts {
+<script>
+  function applySort(val) {
+    // Arama kutusundaki mevcut metni al
+    var q = document.getElementById('q-input')?.value || '';
+    // Index’e yönlendir
+    var base = '@Url.Action("Index","Idea")';
+    var url = base + '?sort=' + encodeURIComponent(val);
+    if (q.trim() !== '') {
+      url += '&q=' + encodeURIComponent(q.trim());
+    }
+    // page paramı vermiyoruz -> 1. sayfa
+    window.location.href = url;
+  }
+</script>
+}
+
+
+
+

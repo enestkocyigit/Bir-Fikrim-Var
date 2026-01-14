@@ -1,0 +1,35 @@
+﻿@using BirFikrimVar.Entity.ViewModels
+@model List<BirFikrimVar.Entity.Models.Idea>
+
+<h2>Fikirlerim</h2>
+
+@if (TempData["Info"] != null)
+{
+    <div class="alert alert-success">@TempData["Info"]</div>
+}
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-info">Henüz hiç fikir paylaşmadınız.</div>
+}
+else
+{
+    @foreach (var idea in Model)
+    {
+        var canEdit = (DateTime.Now - idea.CreatedAt) <= TimeSpan.FromMinutes(30);
+
+        var vm = new IdeaCardViewModel
+        {
+            Idea = idea,
+            HasLiked = false,
+            LikeCount = 0,
+
+            ShowEdit = true,
+            ShowDelete = true,
+            CanEdit = canEdit
+        };
+
+        @await Html.PartialAsync("_IdeaCard", vm)
+    }
+}
+

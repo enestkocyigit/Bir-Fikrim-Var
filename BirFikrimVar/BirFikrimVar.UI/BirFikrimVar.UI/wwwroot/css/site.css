@@ -1,0 +1,59 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+.login-card {
+    width: 420px; /* kart geniþliði */
+    border-radius: 1rem; /* köþeler yuvarlatma */
+}
+
+    .login-card .form-control {
+        height: 48px;
+        border-radius: .6rem;
+    }
+
+body {
+    background-color: #f7f8fa; /* açýk gri arkaplan */
+}
+
+.btn-purple {
+    background-color: #6f42c1; /* Bootstrap mor */
+    color: white;
+}
+
+    .btn-purple:hover {
+        background-color: #5a32a3; /* biraz koyusu */
+        color: white;
+    }
+
+.btn-pink {
+    background-color: #e83e8c; /* pembe */
+    color: white;
+}
+
+    .btn-pink:hover {
+        background-color: #d63384; /* koyu pembe */
+        color: white;
+    }

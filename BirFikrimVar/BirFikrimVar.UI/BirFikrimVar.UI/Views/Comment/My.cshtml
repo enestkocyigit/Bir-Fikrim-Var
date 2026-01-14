@@ -1,0 +1,69 @@
+﻿@model BirFikrimVar.Entity.ViewModels.MyCommentsViewModel
+@{
+    ViewData["Title"] = "Yorumlarım";
+}
+
+<h2>Yorumlarım</h2>
+
+@if (Model.Items == null || !Model.Items.Any())
+{
+    <div class="alert alert-info">Henüz yorum yapmamışsınız.</div>
+}
+else
+{
+    foreach (var item in Model.Items)
+    {
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div class="pe-3">
+                        <h5 class="mb-1">@item.IdeaTitle</h5>
+                        <div class="text-muted small mb-2">
+                            Yazan: @item.IdeaAuthorName
+                        </div>
+
+                        <p class="mb-2">@item.CommentContent</p>
+
+                        <div class="text-muted small">
+                            @item.CreatedAt.ToString("dd.MM.yyyy HH:mm") • 👍 @item.LikeCount
+                        </div>
+                    </div>
+
+                    <div class="text-end" style="min-width: 170px;">
+                        <!-- Detay -->
+                        <a asp-controller="Idea"
+                           asp-action="Details"
+                           asp-route-id="@item.IdeaId"
+                           class="btn btn-sm btn-outline-primary w-100 mb-2">
+                            💬 Detay
+                        </a>
+
+                        <!-- Düzenle  -->
+                        <a asp-controller="Comment"
+                           asp-action="Edit"
+                           asp-route-id="@item.CommentId"
+                           class="btn btn-sm btn-outline-secondary w-100 mb-2">
+                            Düzenle
+                        </a>
+
+                        <!-- Sil -->
+                        <form asp-controller="Comment"
+                              asp-action="Delete"
+                              method="post"
+                              class="mt-1">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@item.CommentId" />
+                            <input type="hidden" name="ideaId" value="@item.IdeaId" />
+                            <button type="submit"
+                                    class="btn btn-sm btn-outline-danger w-100"
+                                    onclick="return confirm('Yorum silinsin mi?');">
+                                Sil
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+

@@ -1,0 +1,17 @@
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\bin\Debug\net8.0\BirFikrimVar.Business.deps.json
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\bin\Debug\net8.0\BirFikrimVar.Business.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\bin\Debug\net8.0\BirFikrimVar.Business.pdb
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\bin\Debug\net8.0\BirFikrimVar.DataAccess.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\bin\Debug\net8.0\BirFikrimVar.Entity.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\bin\Debug\net8.0\BirFikrimVar.DataAccess.pdb
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\bin\Debug\net8.0\BirFikrimVar.Entity.pdb
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikrimVar.Business.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikrimVar.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikrimVar.Business.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikrimVar.Business.AssemblyInfo.cs
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikrimVar.Business.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikri.E25588CF.Up2Date
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikrimVar.Business.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\refint\BirFikrimVar.Business.dll
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\BirFikrimVar.Business.pdb
+C:\Users\Dell\Desktop\BirFikrimVar\BirFikrimVar.UI\BirFikrimVar.Business\obj\Debug\net8.0\ref\BirFikrimVar.Business.dll
